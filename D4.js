@@ -87,6 +87,25 @@ console.log(boundary(5.5)); //errore
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 console.log("Esercizio 5");
+const epify = function (stringa) {
+  let stringaFinal;
+  if (typeof stringa === "string") {
+    const primaParola = stringa.split(" ");
+    if (primaParola[0] === "EPICODE") {
+      stringaFinal = stringa;
+    } else {
+      stringaFinal = "EPICODE" + stringa;
+    }
+  } else {
+    stringaFinal = "errore devi inserire una stringa";
+  }
+  return stringaFinal;
+};
+console.log(epify("EPICODE")); // EPICODE
+console.log(epify(" è un accademia")); // EPICODE è un accademia
+console.log(epify("EPICODE è un accademia")); // EPICODE è un accademia
+console.log(epify(8)); // "errore devi inserire una stringa"
+
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
  di 3 o di 7. (Suggerimento: usa l'operatore modulo)
