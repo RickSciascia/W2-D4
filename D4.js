@@ -113,6 +113,23 @@ console.log(epify(8)); // "errore devi inserire una stringa"
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 console.log("Esercizio 6");
+const check3and7 = function (n) {
+  let messaggio;
+  if (n >= 0) {
+    if (n % 3 === 0 || n % 7 === 0) {
+      messaggio = "il numero è un multiplo di 3 o di 7";
+    } else {
+      messaggio = "il numero NON è multiplo di 3 o di 7";
+    }
+  } else {
+    messaggio = "numero negativo";
+  }
+  return messaggio;
+};
+console.log(check3and7(3)); // "il numero è un multiplo di 3 o di 7";
+console.log(check3and7(21)); // "il numero è un multiplo di 3 o di 7";
+console.log(check3and7(5)); // "il numero NON è multiplo di 3 o di 7";
+console.log(check3and7(-3)); // "numero negativo";
 
 /* ESERCIZIO 7
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
