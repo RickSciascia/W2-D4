@@ -136,7 +136,14 @@ console.log(check3and7(-3)); // "numero negativo";
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-console.log("Esercizio 7");
+// console.log("Esercizio 7");
+// const reverseString = function(str)
+// {
+//   let arrayString
+//   let strFinale
+//   arrayString = str.split("")
+//   strFinale = arrayString[]
+// }
 
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
@@ -145,6 +152,15 @@ console.log("Esercizio 7");
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 console.log("Esercizio 8");
+const upperFirst = function (str) {
+  let parole;
+  let numDiUpper;
+  parole = str.split(" ");
+  numDiUpper = parole.length;
+  console.log(numDiUpper, "lunghezza");
+  for (i = 0; i < numDiUpper; i++) {}
+};
+upperFirst("ciao mi chiamo rick");
 
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
