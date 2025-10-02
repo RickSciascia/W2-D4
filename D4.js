@@ -155,12 +155,18 @@ console.log("Esercizio 8");
 const upperFirst = function (str) {
   let parole;
   let numDiUpper;
+  let primo;
   parole = str.split(" ");
   numDiUpper = parole.length;
   console.log(numDiUpper, "lunghezza");
-  for (i = 0; i < numDiUpper; i++) {}
+  for (i = 0; i < numDiUpper; i++) {
+    primo = parole[i].charAt(0).toUpperCase();
+    console.log("prima lettera", primo, "al giro", i);
+  }
+  JSON.stringify(parole);
+  return parole;
 };
-upperFirst("ciao mi chiamo rick");
+console.log(upperFirst("ciao mi chiamo rick"));
 
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
